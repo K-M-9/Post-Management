@@ -1,7 +1,23 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
 
-    <style name="Base.Theme.PostManagement" parent="Theme.Material3.DayNight.NoActionBar">
 
+    <style name="DialogTransparent" parent="Theme.MaterialComponents.Light.Dialog.Alert">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="colorPrimary">@color/primary_color</item>
+        <item name="colorOnPrimary">@color/on_primary_color</item>
+        <item name="colorPrimaryContainer">@color/primary_container_color</item>
+        <item name="colorOnPrimaryContainer">@color/on_primary_container_color</item>
+    </style>
+
+    <style name="Base.Theme.PostManagement" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary_color</item>
+        <item name="colorOnPrimary">@color/on_primary_color</item>
+        <item name="colorPrimaryContainer">@color/primary_container_color</item>
+        <item name="colorOnPrimaryContainer">@color/on_primary_container_color</item>
+        <item name="android:dialogTheme">@style/DialogTransparent</item>
     </style>
 
     <style name="Theme.PostManagement" parent="Base.Theme.PostManagement" />
