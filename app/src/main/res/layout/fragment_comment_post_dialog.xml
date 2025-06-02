@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_dialog_background"
+    android:orientation="vertical"
+    android:padding="@dimen/_15sdp"
+    tools:context=".presentation.common.CommentPostDialogFragment">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/comment_dialog_til_comment"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:hint="@string/enter_comment"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="@color/text_input_border_selector"
+        app:placeholderText="@string/enter_comment">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/comment_dialog_comment_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:padding="@dimen/_10sdp"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/_15ssp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/_5sdp">
+
+        <Button
+            android:id="@+id/comment_dialog_btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel" />
+
+        <Button
+            android:id="@+id/comment_dialog_btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:text="@string/save" />
+    </LinearLayout>
+
+</LinearLayout>
