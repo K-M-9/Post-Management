@@ -1,8 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="white">#FFFFFF</color>
-
+    <color name="black">#FF000000</color>
+    <color name="post_title">#FF000000</color>
+    <color name="post_body">#FF49454F</color>
     <color name="primary_color">#4CAF50</color>
     <color name="background_color">#FFFFFFFF</color>
+    <color name="color_on_surface_variant">#FF49454F</color>
+
+    <color name="text_color">#000000</color>
+    <color name="border_unfocused_color">#CCCCCC</color>
+
+    <color name="snackbar_text_color">#EBFFFFFF</color>
+    <color name="chipTextColor">#EBFFFFFF</color>
     <color name="error_color">#B00020</color>
+
+    <color name="on_primary_color">#FFFFFF</color>
+    <color name="primary_container_color">#A5D6A7</color>
+    <color name="on_primary_container_color">#000000</color>
+
 </resources>
