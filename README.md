@@ -51,4 +51,4 @@ Post Management App
 - kotlinx-coroutines (Android & Test): Asynchronous programming and structured concurrency, plus test helpers.
 - Lifecycle Runtime & ViewModel KTX: Lifecycle-aware components and ViewModel support for UI data.
 - SDP / SSP: Scalable size units for consistent UI sizing across different screen densities.
--Testing Frameworks:JUnit (unit testing) , MockK (mocking and stubbing for Kotlin) , kotlinx-coroutines-test (testing coroutines)
+- Testing Frameworks:JUnit (unit testing) , MockK (mocking and stubbing for Kotlin) , kotlinx-coroutines-test (testing coroutines)
