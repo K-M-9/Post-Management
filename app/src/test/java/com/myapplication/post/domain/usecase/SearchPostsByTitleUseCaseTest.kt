@@ -11,9 +11,9 @@ import kotlinx.coroutines.test.runTest
 import org.junit.Test
 import kotlin.test.assertEquals
 
-class SearchPostsByTitleUseCaseTestTest {
+class SearchPostsByTitleUseCaseTest{
     private val repository = mockk<PostRepository>(relaxed = true)
-    private val useCase = SearchPostsByTitleUseCaseTest(repository)
+    private val useCase = SearchPostsByTitleUseCase(repository)
 
     @Test
     fun `GIVEN repository returns search results flow WHEN invoke is called with query THEN return same flow`() =

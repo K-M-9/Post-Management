@@ -6,7 +6,7 @@ import com.myapplication.post.domain.repository.PostRepository
 import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject
 
-class SearchPostsByTitleUseCaseTest @Inject constructor(
+class SearchPostsByTitleUseCase @Inject constructor(
     private val repository: PostRepository
 ) {
     operator fun invoke(query: String): Flow<PagingData<Post>> {
