@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+
+    <dialog
+        android:id="@+id/savePostDialog"
+        android:name="com.myapplication.post.presentation.common.SavePostDialogFragment"
+        android:label="Save Post">
+
+        <argument
+            android:name="post_id"
+            android:defaultValue="0"
+            app:argType="integer" />
+
+        <argument
+            android:name="post_title"
+            android:defaultValue=""
+            app:argType="string" />
+
+        <argument
+            android:name="post_body"
+            android:defaultValue=""
+            app:argType="string" />
+
+        <argument
+            android:name="post_comment"
+            android:defaultValue=""
+            app:argType="string" />
+    </dialog>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.myapplication.post.presentation.screen.home.HomeFragment"
+        android:label="Posts">
+
+        <action
+            android:id="@+id/action_home_to_search"
+            app:destination="@id/searchFragment" />
+
+        <action
+            android:id="@+id/action_home_to_saveDialog"
+            app:destination="@id/savePostDialog" />
+
+        <action
+            android:id="@+id/action_home_to_commentDialog"
+            app:destination="@id/commentPostDialog" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.myapplication.post.presentation.screen.search.SearchFragment"
+        android:label="Search">
+
+        <action
+            android:id="@+id/action_search_to_saveDialog"
+            app:destination="@id/savePostDialog" />
+
+        <action
+            android:id="@+id/action_search_to_commentDialog"
+            app:destination="@id/commentPostDialog" />
+    </fragment>
+
+
+    <dialog
+        android:id="@+id/commentPostDialog"
+        android:name="com.myapplication.post.presentation.common.CommentPostDialogFragment"
+        android:label="Post Comments">
+
+        <argument
+            android:name="post_id"
+            android:defaultValue="0"
+            app:argType="integer" />
+
+        <argument
+            android:name="post_comment"
+            android:defaultValue=""
+            app:argType="string" />
+    </dialog>
+
+</navigation>
