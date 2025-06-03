@@ -11,6 +11,7 @@
         android:layout_width="@dimen/_150sdp"
         android:layout_height="@dimen/_150sdp"
         android:src="@drawable/ic_error"
+        app:tint="@color/black"
         android:visibility="gone"
         android:contentDescription="@string/error_loading_posts"
         app:layout_constraintBottom_toBottomOf="parent"
