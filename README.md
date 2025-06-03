@@ -54,6 +54,7 @@ https://github.com/user-attachments/assets/447cc135-429a-4613-8b17-fe869fc490c8
 <img width="150" src="https://github.com/user-attachments/assets/295665c0-2a4a-42cc-bc8c-9358dd7218bd" alt="Image 18">
 <img width="150" src="https://github.com/user-attachments/assets/fa53d1d4-2678-41f4-bc67-920d78823d67" alt="Image 19">
 <img width="150" src="https://github.com/user-attachments/assets/a8714df3-b29a-4cdd-beef-ecca00d5bcc6" alt="Image 20">
+<img width="150" src="https://github.com/user-attachments/assets/d0fdecd3-6f03-4dbf-b938-742d9ec0da43" alt="Image 21">
 
 
 ## Techniques 🛠
